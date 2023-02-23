@@ -1,0 +1,34 @@
+.wrapper__content-avatar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 54px;
+        height: 54px;
+        margin-right: 16px;
+        border-radius: 50%;
+    }
+
+    p {
+        text-transform: capitalize;
+        font-size: 15px;
+        margin-bottom: 0;
+        font-weight: 600;
+    }
+}
+
+.wrapper__content-time {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    span{
+        font-size: 14px;
+    }
+
+    span:first-child {
+        margin-right: 8px;
+    }
+}

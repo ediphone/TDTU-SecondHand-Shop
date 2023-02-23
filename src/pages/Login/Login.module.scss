@@ -1,0 +1,127 @@
+.container {
+    width: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(120deg, #3453f5, #b654f2, #da579a, #f15862);
+}
+
+.container__left,
+.container__right {
+    height: 250px;
+    position: relative;
+    width: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.container__left h1 {
+    position: absolute;
+    left: 200px;
+    bottom: 0;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    width: 20px;
+    flex-wrap: wrap;
+    font-size: 40px;
+}
+
+.container__right .container__right-wrapper {
+    position: absolute;
+    top: 50px;
+    right: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__right-wrapper h2 {
+    color: #333;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.container__right-wrapper button {
+    background-color: #fff;
+    border-radius: 28px;
+    padding: 4px 20px 4px 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container__right-wrapper button span {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.container__right-wrapper button .icon__google {
+    width: 35px;
+    height: 35px;
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .container__left {
+        height: 550px;
+    }
+
+    .container__left h1 {
+        left: 100px;
+    }
+
+    .container__right .container__right-wrapper {
+        right: 100px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .container__left h1 {
+        left: 50px;
+        // transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .container__right .container__right-wrapper {
+        right: 60px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 430px) {
+    .container__left h1 {
+        left: 50px;
+        // transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .container__right .container__right-wrapper {
+        right: 75px;
+    }
+}
+
+@media (max-width: 380px) {
+    .container__left h1 {
+        left: 50px;
+        // transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .container__right .container__right-wrapper {
+        right: 60px;
+    }
+}

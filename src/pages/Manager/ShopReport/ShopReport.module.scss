@@ -1,0 +1,71 @@
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+table thead tr {
+    background-color: rgb(228, 228, 228);
+}
+
+table tbody tr {
+    border-bottom: 1px solid #ccc;
+}
+
+table td,
+th {
+    text-align: left;
+    font-size: 14px;
+    padding: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.container {
+    padding: 30px 40px;
+
+    h1 {
+        text-align: center;
+        margin: 40px 80px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .table-users tr {
+        display: grid;
+        grid-template-columns: 30% 30% 10% 10% 20%;
+    }
+}
+
+@media screen and (max-width: 1023.98px) {
+    .table-users {
+        border-spacing: 0;
+    }
+
+    .table-users th:first-child,
+    .table-users td:first-child {
+        position: sticky;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        min-width: 150px;
+        border-right: 1px solid #ccc;
+    }
+
+    .table-users th:first-child {
+        background-color: rgb(228, 228, 228);
+    }
+
+    .table-users td:first-child {
+        background: #fff;
+    }
+
+    .job-title {
+        max-width: 100px;
+    }
+}

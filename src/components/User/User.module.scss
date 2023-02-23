@@ -1,0 +1,30 @@
+
+.posts__header-left {
+    display: flex;
+    align-items: center;
+    min-width: 220px;
+}
+
+.posts__header-left p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.posts__header-left-avatar .p:first-child {
+    display: block;
+    margin-bottom: 8px;
+    min-width: 150px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #333;
+}
+
+.posts__header-img {
+    height: 64px;
+    width: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-right: 8px;
+}
